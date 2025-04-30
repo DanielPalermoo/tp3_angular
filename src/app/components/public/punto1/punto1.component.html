@@ -1,1 +1,50 @@
-<p>punto1 works!</p>
+<h2 class="text-center my-4">Noticias de Abril 2025</h2>
+<div
+  id="carouselExampleDark"
+  class="carousel carousel-dark slide py-4 mx-auto"
+  style="max-width: 800px; height: auto">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        [src]="noticias[noticiaActual].imagen"
+        class="d-block mx-auto"
+        alt="noticia {{ noticiaActual }}"
+        style="object-fit: cover; width: 100%; max-width: 900px; height: 520px"
+      />
+      <div class="carousel-caption text-center">
+        <h5
+          class="text-danger text-uppercase fw-bold font-monospace fs-2 fs-md-3"
+        >
+          {{ noticias[noticiaActual].titulo }}
+        </h5>
+        <p class="text-warning font-monospace fs-7 fs-md-6">
+          {{ noticias[noticiaActual].descripcion }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    (click)="anteriorNoticia()"
+  >
+    <span
+      class="carousel-control-prev-icon"
+      aria-hidden="true"
+      style="filter: invert(1)"
+    ></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    (click)="siguienteNoticia()"
+  >
+    <span
+      class="carousel-control-next-icon"
+      aria-hidden="true"
+      style="filter: invert(1)"
+    ></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
