@@ -1,0 +1,10 @@
+.container-home{
+    position:relative;
+    min-height: 50vh;
+}
+.container-home-child{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
