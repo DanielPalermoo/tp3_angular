@@ -4,3 +4,19 @@ img{
     display: block;
     margin: 0 auto;
 }
+
+.carousel-caption h5 { /* Estilo para el título */
+    color: #FFD700; /* o color: #FFFF00; */
+    /* ...otros estilos... */
+  }
+  
+  .carousel-caption p { /* Estilo para la descripción */
+    color: #D3D3D3;
+    /* ...otros estilos... */
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Ejemplo: fondo negro semi-transparente */
+    /* background-color: rgba(139, 0, 0, 0.6);  Ejemplo: rojo oscuro semi-transparente*/
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    border-radius: 5px; /* Opcional: para esquinas redondeadas */
+}
